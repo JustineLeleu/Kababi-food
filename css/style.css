@@ -200,7 +200,7 @@ header .header-button {
   margin-left: 15%;
   margin-right: 15%;
   align-items: center;
-  margin-top: -10%;
+  margin-top: -5%;
 }
 .about-us .container-img .item-img {
   text-align: center;
@@ -208,10 +208,9 @@ header .header-button {
 .about-us .container-img .item-img img {
   width: 100%;
 }
-.about-us .container-img .out-of-bound {
+.about-us .container-img .item-img .out-of-bound {
   border: solid white;
   border-width: 20px;
-  overflow: visible;
   border-radius: 50%;
   box-sizing: border-box;
 }
