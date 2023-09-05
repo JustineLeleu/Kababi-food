@@ -1,0 +1,116 @@
+// About us section
+.about-us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container-img
+    {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-items: center;
+
+        margin-top: -10%;
+
+        .item-img
+        {
+            text-align: center;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+        .out-of-bound
+        {
+            border: solid white;
+            border-width: 20px;
+            overflow: visible;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+    }
+
+    .container-title
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        padding-top: 20px;
+
+        p
+        {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            color: $lightorange;
+            font-family: 'Cormorant Garamond';
+            font-size: 150px;
+            margin: 0;
+            align-self: flex-start;
+        }
+
+        h2
+        {
+            font-family: 'Cormorant Garamond';
+            font-weight: 500;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+
+        h3
+        {
+            font-family: open sans;
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        img
+        {
+            position: absolute;
+            right: 10%;
+            width: 100px;
+        }
+    }
+
+    .container-content
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        margin-top: 50px;
+        align-items: center;
+        gap: 30px;
+
+        .img-item
+        {
+            grid-column: 1;
+            object-fit: cover;
+            width: auto;
+            max-height: 80%;
+            align-self: center;
+            justify-self: center;
+        }
+
+        p
+        {
+            grid-column: 2;
+            font-family: 'Forum';
+            font-size: 25px;
+        }
+
+        .empty-button
+        {
+            grid-column: 2;
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+}

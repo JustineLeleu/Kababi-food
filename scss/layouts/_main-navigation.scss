@@ -41,18 +41,12 @@
             width: 10px;
             height: 10px;
             background-color: $orange;
-            -webkit-mask-image: url(/assets/images/Other/telephone.png);
-            mask-image: url(/assets/images/Other/telephone.png);
+            -webkit-mask-image: url(../assets/images/Other/telephone.png);
+            mask-image: url(../assets/images/Other/telephone.png);
             -webkit-mask-repeat: no-repeat;
             mask-repeat: no-repeat; 
             mask-size: cover;
             transform: rotate(-90deg);
-        }
-
-        .burger-button
-        {
-            //padding: 0px 10px 0px 10px;
-            //margin: 0;
         }
     }
 }

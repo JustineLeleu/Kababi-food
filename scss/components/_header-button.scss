@@ -1,29 +1,23 @@
-// Button no background + hover orange
-.empty-button
+// Button header + hover orange
+.header-button
 {
     border: solid lightgrey;
     border-width: 1px;
     border-radius: 5px;
     padding: 10px;
-    font-family: Open Sans;
-    font-size: 12px;
 
     img
     {
+        filter: invert(1);
         width: 12px;
         margin-left: 10px;
         vertical-align: middle;
     }
 }
 
-.empty-button:hover
+.header-button:hover
 {
     background-color: $orange;
     border-color: rgba(255, 255, 255, 0);
     color: white;
-}
-
-.empty-button:hover img
-{
-    filter: invert(1);
 }
