@@ -43,7 +43,7 @@ Files inside this folder can contain specific element styles and layout.
 */
 header {
   color: white;
-  background-image: url(../../assets/images/slider/img_bg_slider_home01.jpg);
+  background-image: url(../assets/images/slider/img_bg_slider_home01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
