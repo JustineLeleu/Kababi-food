@@ -1,0 +1,116 @@
+// Media query
+$breakpoints: 
+(
+  "phone-down": 500px,
+  "tablet-up": 768px,
+  "tablet-down": 900px,
+  "desktop-up": 1024px,
+  "desktop-down": 1280px,
+  "widescreen-up": 1440px
+);
+
+@mixin media-min($_key)
+{
+    @media screen and (min-width: map-get($breakpoints, $_key))
+    {
+        &{@content;}
+    }
+}
+
+%header-title-font-size
+{
+    $size: 30px;
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 10px;
+            font-size: $size;
+        }
+    }
+}
+
+%header-font-size
+{
+    $size: 5px;
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size+ 2px;
+            font-size: $size;
+        }
+    }
+}
+
+%header-img-size
+{
+    $size: 5px;
+    width: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 2px;
+            width: $size;
+        }
+    }
+}
+
+%header-logo-size
+{
+    $size: 30px;
+    width: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 20px;
+            width: $size;
+        }
+    }
+}
+
+%header-button-size
+{
+    $padding: 3px;
+    $radius: 2px;
+    padding: $padding;
+    border-radius: $radius;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $padding: $padding + 2px;
+            $radius: $radius + 1px;
+            padding: $padding;
+            border-radius: $radius;
+        }
+    }
+}
+
+%header-title-img-size
+{
+    $size: 40px;
+    $offset: 30px;
+    width: $size;
+    top: $offset;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 10px;
+            $offset: $offset + 10px;
+            width: $size;
+            top: $offset;
+        }
+    }
+}

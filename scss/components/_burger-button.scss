@@ -10,14 +10,13 @@
     label
     {
         background-color: $orange;
-        border-radius: 5px;
-        padding: 10px;
+        @extend %header-button-size;
 
         img
         {
             filter: invert(1);
-            width: 12px;
-            margin-left: 10px;
+            @extend %header-img-size;
+            margin-left: 2px;
             vertical-align: middle;
         }
     }
