@@ -1,0 +1,29 @@
+// Buregr menu button
+.burger-button
+{
+    #menu-toggle
+    {
+        position: absolute;
+        left: -100vw;
+    }
+
+    label
+    {
+        background-color: $orange;
+        text-transform: uppercase;
+        @extend %header-button-size;
+
+        img
+        {
+            filter: invert(1);
+            @extend %header-img-size;
+            margin-left: 2px;
+            vertical-align: middle;
+        }
+    }
+}
+
+header:has(#menu-toggle:not(:checked)) .menu-burger
+{
+    display: none;
+}

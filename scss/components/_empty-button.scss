@@ -3,20 +3,25 @@
 {
     border: solid lightgrey;
     border-width: 1px;
-    border-radius: 5px;
-    padding: 10px;
+    font-family: Open Sans;
+    text-transform: uppercase;
+    @extend %empty-button-size;
 
     img
     {
-        filter: invert(1);
-        width: 12px;
-        margin-left: 10px;
+        margin-left: 2px;
         vertical-align: middle;
     }
 }
 
 .empty-button:hover
 {
-    background-color: orange;
+    background-color: $orange;
     border-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.empty-button:hover img
+{
+    filter: invert(1);
 }

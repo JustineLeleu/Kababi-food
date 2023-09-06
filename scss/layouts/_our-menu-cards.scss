@@ -1,0 +1,58 @@
+// Cards in Our Menu section
+.our-menu-content
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+
+    .content-item
+    {
+        background-color: white;
+        border: dashed rgba(255, 255, 255, 0);
+        border-width: 1px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(75% 25%);
+        grid-template-rows: repeat(2, fit-content(40px));
+        align-items: center;
+        padding: 2%;
+        @extend %our-menu-content;
+
+        h4
+        {
+            grid-column: 1;
+            grid-row: 1;
+            margin: 0;
+            font-family: 'Cormorant Garamond';
+            font-weight: 600;
+        }
+
+        .text
+        {
+            grid-column: 1;
+            grid-row: 2;
+            margin: 0;
+            font-family: Open Sans;
+        }
+
+        .price
+        {
+            grid-column: 2;
+            grid-row: span 2;
+            margin: 0;
+            justify-self: right;
+            font-family: Open Sans;
+            color: $orange;
+        }
+    }
+
+    .content-item:hover
+    {
+        border: dashed $orange;
+        border-width: 1px;
+    }
+}
