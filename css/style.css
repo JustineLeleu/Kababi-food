@@ -227,6 +227,262 @@ header .title img {
   }
 }
 
+.about-us .container-title .back-title {
+  font-size: 50px;
+}
+.about-us .container-title h2 {
+  font-size: 15px;
+}
+.about-us .container-title h3 {
+  font-size: 5px;
+}
+.about-us .container-title img {
+  width: 40px;
+}
+@media screen and (min-width: 500px) {
+  .about-us .container-title .back-title {
+    font-size: 70px;
+  }
+  .about-us .container-title h2 {
+    font-size: 18px;
+  }
+  .about-us .container-title h3 {
+    font-size: 7px;
+  }
+  .about-us .container-title img {
+    width: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us .container-title .back-title {
+    font-size: 90px;
+  }
+  .about-us .container-title h2 {
+    font-size: 21px;
+  }
+  .about-us .container-title h3 {
+    font-size: 9px;
+  }
+  .about-us .container-title img {
+    width: 60px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .about-us .container-title .back-title {
+    font-size: 110px;
+  }
+  .about-us .container-title h2 {
+    font-size: 24px;
+  }
+  .about-us .container-title h3 {
+    font-size: 11px;
+  }
+  .about-us .container-title img {
+    width: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-us .container-title .back-title {
+    font-size: 130px;
+  }
+  .about-us .container-title h2 {
+    font-size: 27px;
+  }
+  .about-us .container-title h3 {
+    font-size: 13px;
+  }
+  .about-us .container-title img {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-us .container-title .back-title {
+    font-size: 150px;
+  }
+  .about-us .container-title h2 {
+    font-size: 30px;
+  }
+  .about-us .container-title h3 {
+    font-size: 15px;
+  }
+  .about-us .container-title img {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us .container-title .back-title {
+    font-size: 170px;
+  }
+  .about-us .container-title h2 {
+    font-size: 33px;
+  }
+  .about-us .container-title h3 {
+    font-size: 17px;
+  }
+  .about-us .container-title img {
+    width: 100px;
+  }
+}
+
+.empty-button {
+  font-size: 3px;
+  padding: 3px;
+  border-radius: 2px;
+}
+.empty-button img {
+  width: 3px;
+}
+@media screen and (min-width: 500px) {
+  .empty-button {
+    font-size: 5px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .empty-button img {
+    width: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .empty-button {
+    font-size: 7px;
+    padding: 7px;
+    border-radius: 4px;
+  }
+  .empty-button img {
+    width: 7px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .empty-button {
+    font-size: 9px;
+    padding: 9px;
+    border-radius: 5px;
+  }
+  .empty-button img {
+    width: 9px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .empty-button {
+    font-size: 11px;
+    padding: 11px;
+    border-radius: 6px;
+  }
+  .empty-button img {
+    width: 11px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .empty-button {
+    font-size: 13px;
+    padding: 13px;
+    border-radius: 7px;
+  }
+  .empty-button img {
+    width: 13px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .empty-button {
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .empty-button img {
+    width: 15px;
+  }
+}
+
+.about-us .container-img .item-img .out-of-bound {
+  border: solid rgb(255, 255, 255);
+  border-width: 10px;
+}
+@media screen and (min-width: 500px) {
+  .about-us .container-img .item-img .out-of-bound {
+    border-width: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us .container-img .item-img .out-of-bound {
+    border-width: 14px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .about-us .container-img .item-img .out-of-bound {
+    border-width: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-us .container-img .item-img .out-of-bound {
+    border-width: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-us .container-img .item-img .out-of-bound {
+    border-width: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us .container-img .item-img .out-of-bound {
+    border-width: 22px;
+  }
+}
+
+.about-us .container-content .img-item {
+  max-height: 120px;
+}
+.about-us .container-content p {
+  font-size: 8px;
+}
+@media screen and (min-width: 500px) {
+  .about-us .container-content .img-item {
+    max-height: 190px;
+  }
+  .about-us .container-content p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us .container-content .img-item {
+    max-height: 260px;
+  }
+  .about-us .container-content p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .about-us .container-content .img-item {
+    max-height: 330px;
+  }
+  .about-us .container-content p {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-us .container-content .img-item {
+    max-height: 400px;
+  }
+  .about-us .container-content p {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-us .container-content .img-item {
+    max-height: 470px;
+  }
+  .about-us .container-content p {
+    font-size: 33px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-us .container-content .img-item {
+    max-height: 540px;
+  }
+  .about-us .container-content p {
+    font-size: 38px;
+  }
+}
+
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
@@ -258,14 +514,10 @@ Files inside this folder should contain all styles relating to a reusable compon
 .empty-button {
   border: solid lightgrey;
   border-width: 1px;
-  border-radius: 5px;
-  padding: 10px;
   font-family: Open Sans;
-  font-size: 12px;
 }
 .empty-button img {
-  width: 12px;
-  margin-left: 10px;
+  margin-left: 2px;
   vertical-align: middle;
 }
 
@@ -337,7 +589,6 @@ header .header-button {
   align-items: center;
   margin-left: 5%;
   margin-right: 5%;
-  border: solid blue;
 }
 .top-menu ul {
   display: flex;
@@ -413,8 +664,6 @@ header .header-button {
   width: 100%;
 }
 .about-us .container-img .item-img .out-of-bound {
-  border: solid white;
-  border-width: 20px;
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -424,56 +673,51 @@ header .header-button {
   position: relative;
   width: 100%;
   align-items: center;
-  padding-top: 20px;
 }
-.about-us .container-title p {
+.about-us .container-title .back-title {
   position: absolute;
   z-index: -1;
   top: 0;
   color: rgba(223, 188, 123, 0.196);
   font-family: "Cormorant Garamond";
-  font-size: 150px;
   margin: 0;
   align-self: flex-start;
 }
 .about-us .container-title h2 {
   font-family: "Cormorant Garamond";
   font-weight: 500;
-  font-size: 40px;
   margin-bottom: 0;
+  margin-top: 5%;
 }
 .about-us .container-title h3 {
   font-family: open sans;
-  font-size: 12px;
   font-weight: 500;
   margin-top: 0;
 }
 .about-us .container-title img {
   position: absolute;
   right: 10%;
-  width: 100px;
+  top: 25%;
 }
 .about-us .container-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 60%;
-  margin-top: 50px;
+  margin-top: 5%;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 .about-us .container-content .img-item {
   grid-column: 1;
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;
-  max-height: 80%;
   align-self: center;
   justify-self: center;
 }
 .about-us .container-content p {
   grid-column: 2;
   font-family: "Forum";
-  font-size: 25px;
 }
 .about-us .container-content .empty-button {
   grid-column: 2;

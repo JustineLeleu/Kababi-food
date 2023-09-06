@@ -3,15 +3,12 @@
 {
     border: solid lightgrey;
     border-width: 1px;
-    border-radius: 5px;
-    padding: 10px;
     font-family: Open Sans;
-    font-size: 12px;
+    @extend %empty-button-size;
 
     img
     {
-        width: 12px;
-        margin-left: 10px;
+        margin-left: 2px;
         vertical-align: middle;
     }
 }

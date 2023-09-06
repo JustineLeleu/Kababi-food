@@ -114,3 +114,142 @@ $breakpoints:
         }
     }
 }
+
+%section-title
+{
+    $size1: 50px;
+    $size2: 15px;
+    $size3: 5px;
+    $size4: 40px;
+
+    .back-title
+    {
+        font-size: $size1;
+    }
+    h2
+    {
+        font-size: $size2;
+    }
+    h3
+    {
+        font-size: $size3;
+    }
+    img
+    {
+        width: $size4;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size1: $size1 + 20px;
+            $size2: $size2 + 3px;
+            $size3: $size3 + 2px;
+            $size4: $size4 + 10px;
+
+            .back-title
+            {
+                font-size: $size1;
+            }
+            h2
+            {
+                font-size: $size2;
+            }
+            h3
+            {
+                font-size: $size3;
+            }
+            img
+            {
+                width: $size4;
+            }
+        }
+    }
+}
+
+%empty-button-size
+{
+    $size1: 3px;
+    $size2: 3px;
+    $padding: 3px;
+    $radius: 2px;
+
+    font-size: $size1;
+    padding: $padding;
+    border-radius: $radius;
+    img
+    {
+        width: $size2;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size1: $size1 + 2px;
+            $size2: $size2 + 2px;
+            $padding: $padding + 2px;
+            $radius: $radius + 1px;
+
+            font-size: $size1;
+            padding: $padding;
+            border-radius: $radius;
+            img
+            {
+                width: $size2;
+            }
+        }
+    }
+}
+
+%about-us-img
+{
+    $border: 10px;
+
+    border: solid rgb(255, 255, 255);
+    border-width: $border;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $border: $border + 2px;
+
+            border-width: $border;
+        }
+    }
+}
+
+%about-us-content
+{
+    $size1: 120px;
+    $size2: 8px;
+
+    .img-item
+    {
+        max-height: $size1;
+    }
+    p
+    {
+        font-size: $size2;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size1: $size1 + 70px;
+            $size2: $size2 + 5px;
+
+            .img-item
+            {
+                max-height: $size1;
+            }
+            p
+            {
+                font-size: $size2;
+            }
+        }
+    }
+}
