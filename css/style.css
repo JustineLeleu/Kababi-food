@@ -231,7 +231,7 @@ header .title img {
   font-size: 50px;
 }
 .section-title h2 {
-  font-size: 15px;
+  font-size: 10px;
 }
 .section-title h3 {
   font-size: 5px;
@@ -244,7 +244,7 @@ header .title img {
     font-size: 70px;
   }
   .section-title h2 {
-    font-size: 18px;
+    font-size: 13px;
   }
   .section-title h3 {
     font-size: 7px;
@@ -258,7 +258,7 @@ header .title img {
     font-size: 90px;
   }
   .section-title h2 {
-    font-size: 21px;
+    font-size: 16px;
   }
   .section-title h3 {
     font-size: 9px;
@@ -272,7 +272,7 @@ header .title img {
     font-size: 110px;
   }
   .section-title h2 {
-    font-size: 24px;
+    font-size: 19px;
   }
   .section-title h3 {
     font-size: 11px;
@@ -286,7 +286,7 @@ header .title img {
     font-size: 130px;
   }
   .section-title h2 {
-    font-size: 27px;
+    font-size: 22px;
   }
   .section-title h3 {
     font-size: 13px;
@@ -300,7 +300,7 @@ header .title img {
     font-size: 150px;
   }
   .section-title h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .section-title h3 {
     font-size: 15px;
@@ -314,7 +314,7 @@ header .title img {
     font-size: 170px;
   }
   .section-title h2 {
-    font-size: 33px;
+    font-size: 28px;
   }
   .section-title h3 {
     font-size: 17px;
@@ -556,6 +556,40 @@ header .title img {
   }
   .our-menu-content .content-item .price {
     font-size: 40px;
+  }
+}
+
+.our-menu .section-title h2, .our-menu .section-title h3 {
+  margin-right: 20%;
+}
+@media screen and (min-width: 500px) {
+  .our-menu .section-title h2, .our-menu .section-title h3 {
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-menu .section-title h2, .our-menu .section-title h3 {
+    margin-right: 0%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .our-menu .section-title h2, .our-menu .section-title h3 {
+    margin-right: 0%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .our-menu .section-title h2, .our-menu .section-title h3 {
+    margin-right: 0%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .our-menu .section-title h2, .our-menu .section-title h3 {
+    margin-right: 0%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our-menu .section-title h2, .our-menu .section-title h3 {
+    margin-right: 0%;
   }
 }
 
@@ -829,7 +863,6 @@ header .header-button {
   height: 75%;
   bottom: -25%;
 }
-
 .our-menu-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

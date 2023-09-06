@@ -22,4 +22,14 @@
         height: 75%;
         bottom: -25%;
     }
+
+    .section-title
+    {
+        @extend %our-menu-title-offset;
+
+        h2, h3
+        {
+            //margin-right: 15%;
+        }
+    }
 }

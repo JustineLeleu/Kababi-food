@@ -118,7 +118,7 @@ $breakpoints:
 %section-title
 {
     $size1: 50px;
-    $size2: 15px;
+    $size2: 10px;
     $size3: 5px;
     $size4: 40px;
 
@@ -292,6 +292,29 @@ $breakpoints:
             .price
             {
                 font-size: $size3;
+            }
+        }
+    }
+}
+
+%our-menu-title-offset
+{
+    $offset: 20%;
+
+    h2, h3
+    {
+        margin-right: $offset;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $offset: $offset - 10%;
+
+            h2, h3
+            {
+                margin-right: clamp(0%, $offset ,15%);
             }
         }
     }
