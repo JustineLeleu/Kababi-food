@@ -1046,4 +1046,24 @@ header .header-button {
   align-self: flex-start;
   font-family: Open Sans;
   font-weight: 100;
+}
+
+.team {
+  width: 100%;
+  background-image: url(../assets/images/our-chefs/imgbg-ourchefs.jpg);
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+.team .section-title {
+  color: white;
+}
+.team .team-content {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5%;
+}
+.team .team-content img {
+  width: 15%;
 }/*# sourceMappingURL=style.css.map */
