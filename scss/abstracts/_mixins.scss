@@ -319,3 +319,46 @@ $breakpoints:
         }
     }
 }
+
+%gallery-link-card
+{
+    $size1: 5px;
+    $size2: 10px;
+    $size3: 6px;
+
+    img
+    {
+        width: $size1;
+    }
+    h4
+    {
+        font-size: $size2;
+    }
+    p
+    {
+        font-size: $size3;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size1: $size1 + 2px;
+            $size2: $size2 + 5px;
+            $size3: $size3 + 2px;
+
+            img
+            {
+                width: $size1;
+            }
+            h4
+            {
+                font-size: $size2;
+            }
+            p
+            {
+                font-size: $size3;
+            }
+        }
+    }
+}

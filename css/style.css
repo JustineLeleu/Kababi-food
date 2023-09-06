@@ -593,6 +593,82 @@ header .title img {
   }
 }
 
+.gallery-content .gallery-link img {
+  width: 5px;
+}
+.gallery-content .gallery-link h4 {
+  font-size: 10px;
+}
+.gallery-content .gallery-link p {
+  font-size: 6px;
+}
+@media screen and (min-width: 500px) {
+  .gallery-content .gallery-link img {
+    width: 7px;
+  }
+  .gallery-content .gallery-link h4 {
+    font-size: 15px;
+  }
+  .gallery-content .gallery-link p {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-content .gallery-link img {
+    width: 9px;
+  }
+  .gallery-content .gallery-link h4 {
+    font-size: 20px;
+  }
+  .gallery-content .gallery-link p {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .gallery-content .gallery-link img {
+    width: 11px;
+  }
+  .gallery-content .gallery-link h4 {
+    font-size: 25px;
+  }
+  .gallery-content .gallery-link p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-content .gallery-link img {
+    width: 13px;
+  }
+  .gallery-content .gallery-link h4 {
+    font-size: 30px;
+  }
+  .gallery-content .gallery-link p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery-content .gallery-link img {
+    width: 15px;
+  }
+  .gallery-content .gallery-link h4 {
+    font-size: 35px;
+  }
+  .gallery-content .gallery-link p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery-content .gallery-link img {
+    width: 17px;
+  }
+  .gallery-content .gallery-link h4 {
+    font-size: 40px;
+  }
+  .gallery-content .gallery-link p {
+    font-size: 18px;
+  }
+}
+
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
@@ -907,4 +983,67 @@ header .header-button {
 .our-menu-content .content-item:hover {
   border: dashed rgb(186, 153, 91);
   border-width: 1px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+.gallery .empty-button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.gallery-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 10px;
+}
+.gallery-content img {
+  width: 100%;
+}
+.gallery-content .big {
+  grid-column: span 2;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-content .gallery-link {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.6)), url(../assets/images/gallery/img1gallerybox.jpg);
+  width: 100%;
+  grid-column: span 2;
+  height: 100%;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 50% 10% 25%;
+}
+.gallery-content .gallery-link img {
+  filter: invert(1);
+  justify-self: end;
+  margin: 10px;
+}
+.gallery-content .gallery-link h4 {
+  color: white;
+  justify-self: center;
+  align-self: center;
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+}
+.gallery-content .gallery-link p {
+  color: white;
+  justify-self: center;
+  align-self: flex-start;
+  font-family: Open Sans;
+  font-weight: 100;
 }/*# sourceMappingURL=style.css.map */
