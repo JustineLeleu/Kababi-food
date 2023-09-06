@@ -253,3 +253,46 @@ $breakpoints:
         }
     }
 }
+
+%our-menu-content
+{
+    $size1: 8px;
+    $size2: 5px;
+    $size3: 10px;
+
+    h4
+    {
+        font-size: $size1;
+    }
+    .text
+    {
+        font-size: $size2;
+    }
+    .price
+    {
+        font-size: $size3;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size1: $size1 + 2px;
+            $size2: $size2 + 1px;
+            $size3: $size3 + 5px;
+
+            h4
+            {
+                font-size: $size1;
+            }
+            .text
+            {
+                font-size: $size2;
+            }
+            .price
+            {
+                font-size: $size3;
+            }
+        }
+    }
+}

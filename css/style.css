@@ -483,6 +483,82 @@ header .title img {
   }
 }
 
+.our-menu-content .content-item h4 {
+  font-size: 8px;
+}
+.our-menu-content .content-item .text {
+  font-size: 5px;
+}
+.our-menu-content .content-item .price {
+  font-size: 10px;
+}
+@media screen and (min-width: 500px) {
+  .our-menu-content .content-item h4 {
+    font-size: 10px;
+  }
+  .our-menu-content .content-item .text {
+    font-size: 6px;
+  }
+  .our-menu-content .content-item .price {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-menu-content .content-item h4 {
+    font-size: 12px;
+  }
+  .our-menu-content .content-item .text {
+    font-size: 7px;
+  }
+  .our-menu-content .content-item .price {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .our-menu-content .content-item h4 {
+    font-size: 14px;
+  }
+  .our-menu-content .content-item .text {
+    font-size: 8px;
+  }
+  .our-menu-content .content-item .price {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .our-menu-content .content-item h4 {
+    font-size: 16px;
+  }
+  .our-menu-content .content-item .text {
+    font-size: 9px;
+  }
+  .our-menu-content .content-item .price {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .our-menu-content .content-item h4 {
+    font-size: 18px;
+  }
+  .our-menu-content .content-item .text {
+    font-size: 10px;
+  }
+  .our-menu-content .content-item .price {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our-menu-content .content-item h4 {
+    font-size: 20px;
+  }
+  .our-menu-content .content-item .text {
+    font-size: 11px;
+  }
+  .our-menu-content .content-item .price {
+    font-size: 40px;
+  }
+}
+
 /*
 This file is used to contain all base imports.
 Files inside this folder can contain global styles used in the project.
@@ -737,6 +813,7 @@ header .header-button {
 .our-menu {
   background-color: rgba(223, 199, 154, 0.196);
   margin-top: 5%;
+  padding-bottom: 5%;
   position: relative;
 }
 .our-menu .menu-img1 {
@@ -745,4 +822,56 @@ header .header-button {
   right: 0;
   max-height: 100%;
   width: auto;
+}
+.our-menu .menu-img2 {
+  position: absolute;
+  z-index: -1;
+  height: 75%;
+  bottom: -25%;
+}
+
+.our-menu-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+.our-menu-content .content-item {
+  background-color: white;
+  border: dashed rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(75% 25%);
+  grid-template-rows: repeat(2, fit-content(40px));
+  align-items: center;
+  padding: 2%;
+}
+.our-menu-content .content-item h4 {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+}
+.our-menu-content .content-item .text {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+  font-family: Open Sans;
+}
+.our-menu-content .content-item .price {
+  grid-column: 2;
+  grid-row: span 2;
+  margin: 0;
+  justify-self: right;
+  font-family: Open Sans;
+  color: rgb(186, 153, 91);
+}
+.our-menu-content .content-item:hover {
+  border: dashed rgb(186, 153, 91);
+  border-width: 1px;
 }/*# sourceMappingURL=style.css.map */
