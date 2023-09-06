@@ -1,31 +1,42 @@
 //Header
 header
 {
+<<<<<<< HEAD
     color:white;
     background-image: url(../assets/images/slider/img_bg_slider_home01.jpg);
+=======
+    color: white;
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0) 25%, rgba(255, 255, 255, 0)), url(../assets/images/slider/img_bg_slider_home01.jpg);
+>>>>>>> ac1428c1a008f59c1fbfb6216c769c91210fb110
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 10%;
+    margin-right: 0;
 
     .title
     {
-        margin-left: 80px;
-        font-size: 60px;
+        margin-left: 10%;
         line-height: 10px;
+        font-family: 'Cormorant Garamond';
+        text-transform: uppercase;
+
+        @extend %header-title-font-size;
 
         img
         {
-            width: 85px;
             margin-left: 25px;
             position: absolute;
-            top: 50px;
+            @extend %header-title-img-size;
         }
     }
 
-    .empty-button
+    .header-button
     {
-        margin-left: 80px;
+        margin-left: 10%;
         width: fit-content;
+        font-family: Open Sans;
+        text-transform: uppercase;
+        @extend %header-font-size;
     }
 }

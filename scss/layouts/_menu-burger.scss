@@ -1,0 +1,32 @@
+// Burger menu
+.menu-burger
+{
+    float: right;
+    background: rgb(82, 82, 82);
+    height: 100%;
+    border: solid lightgray;
+    border-width: 1.5px;
+    margin-left: 10px;
+
+    ul
+    {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        li
+        {
+            border: solid lightgray;
+            border-width: 1px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+            @extend %header-font-size;
+        }
+    }
+}
+

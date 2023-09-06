@@ -1,0 +1,30 @@
+// Section Our Menu
+.our-menu
+{
+    background-color: $backgroundorange;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+
+    .menu-img1
+    {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        max-height: 100%;
+        width: auto;
+    }
+
+    .menu-img2
+    {
+        position: absolute;
+        z-index: -1;
+        height: 75%;
+        bottom: -25%;
+    }
+
+    .section-title
+    {
+        @extend %our-menu-title-offset;
+    }
+}

@@ -2,16 +2,16 @@
 .top-menu
 {
     font-family: 'Open Sans';
-    font-size: 12px;
+    @extend %header-font-size;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 
     .top-logo
     {
-        width: 80px;
+        @extend %header-logo-size;
     }
     
     ul
@@ -21,8 +21,11 @@
         padding: 0%;
         gap: 10px;
 
-        .masked
+        img
         {
+            @extend %header-img-size;
+            filter: invert(1);
+            vertical-align: middle;
         }
     }
 
@@ -30,12 +33,20 @@
     {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 2px;
+        align-items: center;
 
-        .empty-button
+        .mask1
         {
-            padding: 0px 10px 0px 10px;
-            margin: 0;
+            @extend %header-img-size;
+            aspect-ratio: 1/1;
+            background-color: $orange;
+            -webkit-mask-image: url(../assets/images/Other/telephone.png);
+            mask-image: url(../assets/images/Other/telephone.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat; 
+            mask-size: cover;
+            transform: rotate(-90deg);
         }
     }
 }
