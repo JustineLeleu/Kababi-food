@@ -1050,10 +1050,19 @@ header .header-button {
 
 .team {
   width: 100%;
-  background-image: url(../assets/images/our-chefs/imgbg-ourchefs.jpg);
   background-size: cover;
   padding-top: 5%;
   padding-bottom: 10%;
+  position: relative;
+}
+.team .background {
+  background-image: url(../assets/images/our-chefs/imgbg-ourchefs.jpg);
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 .team .section-title {
   color: white;
