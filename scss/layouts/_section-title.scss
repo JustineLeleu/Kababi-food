@@ -1,0 +1,39 @@
+// Titles of sections
+.section-title
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        //margin-top: 5%;
+        @extend %section-title;
+
+        .back-title
+        {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            color: $lightorange;
+            font-family: 'Cormorant Garamond';
+            text-transform: uppercase;
+            margin: 0;
+            align-self: flex-start;
+        }
+
+        h2
+        {
+            font-family: 'Cormorant Garamond';
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-top: 5%;
+        }
+
+        h3
+        {
+            font-family: open sans;
+            font-weight: 500;
+            margin-top: 0;
+        }
+    }

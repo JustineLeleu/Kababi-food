@@ -14,6 +14,7 @@ header
         margin-left: 10%;
         line-height: 10px;
         font-family: 'Cormorant Garamond';
+        text-transform: uppercase;
 
         @extend %header-title-font-size;
 
@@ -30,6 +31,7 @@ header
         margin-left: 10%;
         width: fit-content;
         font-family: Open Sans;
+        text-transform: uppercase;
         @extend %header-font-size;
     }
 }

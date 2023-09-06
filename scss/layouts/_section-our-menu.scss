@@ -1,0 +1,18 @@
+// Section Our Menu
+.our-menu
+{
+    background-color: $backgroundorange;
+    //height: fit-content;
+    margin-top: 5%;
+    //padding-top: 5%;
+    position: relative;
+
+    .menu-img1
+    {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        max-height: 100%;
+        width: auto;
+    }
+}

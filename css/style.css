@@ -227,99 +227,99 @@ header .title img {
   }
 }
 
-.about-us .container-title .back-title {
+.section-title .back-title {
   font-size: 50px;
 }
-.about-us .container-title h2 {
+.section-title h2 {
   font-size: 15px;
 }
-.about-us .container-title h3 {
+.section-title h3 {
   font-size: 5px;
 }
-.about-us .container-title img {
+.section-title img {
   width: 40px;
 }
 @media screen and (min-width: 500px) {
-  .about-us .container-title .back-title {
+  .section-title .back-title {
     font-size: 70px;
   }
-  .about-us .container-title h2 {
+  .section-title h2 {
     font-size: 18px;
   }
-  .about-us .container-title h3 {
+  .section-title h3 {
     font-size: 7px;
   }
-  .about-us .container-title img {
+  .section-title img {
     width: 50px;
   }
 }
 @media screen and (min-width: 768px) {
-  .about-us .container-title .back-title {
+  .section-title .back-title {
     font-size: 90px;
   }
-  .about-us .container-title h2 {
+  .section-title h2 {
     font-size: 21px;
   }
-  .about-us .container-title h3 {
+  .section-title h3 {
     font-size: 9px;
   }
-  .about-us .container-title img {
+  .section-title img {
     width: 60px;
   }
 }
 @media screen and (min-width: 900px) {
-  .about-us .container-title .back-title {
+  .section-title .back-title {
     font-size: 110px;
   }
-  .about-us .container-title h2 {
+  .section-title h2 {
     font-size: 24px;
   }
-  .about-us .container-title h3 {
+  .section-title h3 {
     font-size: 11px;
   }
-  .about-us .container-title img {
+  .section-title img {
     width: 70px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .about-us .container-title .back-title {
+  .section-title .back-title {
     font-size: 130px;
   }
-  .about-us .container-title h2 {
+  .section-title h2 {
     font-size: 27px;
   }
-  .about-us .container-title h3 {
+  .section-title h3 {
     font-size: 13px;
   }
-  .about-us .container-title img {
+  .section-title img {
     width: 80px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-us .container-title .back-title {
+  .section-title .back-title {
     font-size: 150px;
   }
-  .about-us .container-title h2 {
+  .section-title h2 {
     font-size: 30px;
   }
-  .about-us .container-title h3 {
+  .section-title h3 {
     font-size: 15px;
   }
-  .about-us .container-title img {
+  .section-title img {
     width: 90px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .about-us .container-title .back-title {
+  .section-title .back-title {
     font-size: 170px;
   }
-  .about-us .container-title h2 {
+  .section-title h2 {
     font-size: 33px;
   }
-  .about-us .container-title h3 {
+  .section-title h3 {
     font-size: 17px;
   }
-  .about-us .container-title img {
+  .section-title img {
     width: 100px;
   }
 }
@@ -515,6 +515,7 @@ Files inside this folder should contain all styles relating to a reusable compon
   border: solid lightgrey;
   border-width: 1px;
   font-family: Open Sans;
+  text-transform: uppercase;
 }
 .empty-button img {
   margin-left: 2px;
@@ -537,6 +538,7 @@ Files inside this folder should contain all styles relating to a reusable compon
 }
 .burger-button label {
   background-color: rgb(186, 153, 91);
+  text-transform: uppercase;
 }
 .burger-button label img {
   filter: invert(1);
@@ -570,6 +572,7 @@ header .title {
   margin-left: 10%;
   line-height: 10px;
   font-family: "Cormorant Garamond";
+  text-transform: uppercase;
 }
 header .title img {
   margin-left: 25px;
@@ -580,6 +583,7 @@ header .header-button {
   width: -moz-fit-content;
   width: fit-content;
   font-family: Open Sans;
+  text-transform: uppercase;
 }
 
 .top-menu {
@@ -643,6 +647,36 @@ header .header-button {
   padding: 10px;
 }
 
+.section-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+.section-title .back-title {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  color: rgba(223, 188, 123, 0.196);
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  margin: 0;
+  align-self: flex-start;
+}
+.section-title h2 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 5%;
+}
+.section-title h3 {
+  font-family: open sans;
+  font-weight: 500;
+  margin-top: 0;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;
@@ -667,34 +701,7 @@ header .header-button {
   border-radius: 50%;
   box-sizing: border-box;
 }
-.about-us .container-title {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  align-items: center;
-}
-.about-us .container-title .back-title {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  color: rgba(223, 188, 123, 0.196);
-  font-family: "Cormorant Garamond";
-  margin: 0;
-  align-self: flex-start;
-}
-.about-us .container-title h2 {
-  font-family: "Cormorant Garamond";
-  font-weight: 500;
-  margin-bottom: 0;
-  margin-top: 5%;
-}
-.about-us .container-title h3 {
-  font-family: open sans;
-  font-weight: 500;
-  margin-top: 0;
-}
-.about-us .container-title img {
+.about-us .section-title img {
   position: absolute;
   right: 10%;
   top: 25%;
@@ -725,4 +732,17 @@ header .header-button {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.our-menu {
+  background-color: rgba(223, 199, 154, 0.196);
+  margin-top: 5%;
+  position: relative;
+}
+.our-menu .menu-img1 {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  max-height: 100%;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */
