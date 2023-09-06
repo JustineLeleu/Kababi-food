@@ -808,6 +808,39 @@ header .header-button {
   transform: rotate(-90deg);
 }
 
+menu {
+  background: #FFFAF0;
+  margin: 0;
+}
+menu h1 {
+  text-align: center;
+}
+menu .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+menu .box {
+  background: white;
+  margin: 10px;
+  line-height: center;
+  text-align: center;
+}
+menu .box img {
+  width: 50px;
+  padding: 4px 20px 2px 20px;
+}
+menu .box h3 {
+  font-size: 10px;
+}
+menu .box .im img {
+  width: 10px;
+}
+menu .box:hover {
+  background: #d3ad7f;
+  color: white;
+}
+
 .menu-burger {
   float: right;
   background: rgb(82, 82, 82);
