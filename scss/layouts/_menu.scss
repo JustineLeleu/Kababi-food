@@ -1,0 +1,57 @@
+
+menu{
+    
+   
+    
+    background: #FFFAF0;
+    margin: 0;
+    //border: solid;
+    
+    
+    h1{
+        text-align: center;
+    }
+    
+    
+    .banner{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+     
+        
+      }  
+        
+      .box{
+        background: white;
+        margin: 10px;
+        
+        line-height: center;
+        text-align: center;
+        img{
+            width: 50px;
+            padding: 4px 20px 2px 20px;
+            
+        }
+        
+        h3{
+            font-size: 10px;
+        }
+        .im img{
+            width: 10px;
+        }
+     }  
+    .box:hover{
+        
+            background: #d3ad7f;
+            color: white;
+        }
+
+      
+     
+ }
+
+    
+    
+
+    
+    
