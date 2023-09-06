@@ -1,0 +1,27 @@
+// Section team
+.team
+{
+    width: 100%;
+    background-image: url(../assets/images/our-chefs/imgbg-ourchefs.jpg);
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+    .section-title
+    {
+        color: white;
+    }
+
+    .team-content
+    {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 5%;
+
+        img
+        {
+            width: 15%;
+        }
+    }
+}
