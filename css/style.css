@@ -48,32 +48,32 @@ header .title {
 }
 @media screen and (min-width: 500px) {
   .menu-burger ul li, .top-menu, header .header-button {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 @media screen and (min-width: 768px) {
   .menu-burger ul li, .top-menu, header .header-button {
-    font-size: 9px;
+    font-size: 7px;
   }
 }
 @media screen and (min-width: 900px) {
   .menu-burger ul li, .top-menu, header .header-button {
-    font-size: 11px;
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 1024px) {
   .menu-burger ul li, .top-menu, header .header-button {
-    font-size: 13px;
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 1280px) {
   .menu-burger ul li, .top-menu, header .header-button {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 1440px) {
   .menu-burger ul li, .top-menu, header .header-button {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 
@@ -82,32 +82,32 @@ header .title {
 }
 @media screen and (min-width: 500px) {
   .contact-footer .mask4, .contact-footer .mask3, .contact-footer .mask2, .contact-footer .mask1, .top-menu .top-info .mask, .top-menu ul img, .burger-button label img, .header-button img {
-    width: 7px;
+    width: 6px;
   }
 }
 @media screen and (min-width: 768px) {
   .contact-footer .mask4, .contact-footer .mask3, .contact-footer .mask2, .contact-footer .mask1, .top-menu .top-info .mask, .top-menu ul img, .burger-button label img, .header-button img {
-    width: 9px;
+    width: 7px;
   }
 }
 @media screen and (min-width: 900px) {
   .contact-footer .mask4, .contact-footer .mask3, .contact-footer .mask2, .contact-footer .mask1, .top-menu .top-info .mask, .top-menu ul img, .burger-button label img, .header-button img {
-    width: 11px;
+    width: 8px;
   }
 }
 @media screen and (min-width: 1024px) {
   .contact-footer .mask4, .contact-footer .mask3, .contact-footer .mask2, .contact-footer .mask1, .top-menu .top-info .mask, .top-menu ul img, .burger-button label img, .header-button img {
-    width: 13px;
+    width: 9px;
   }
 }
 @media screen and (min-width: 1280px) {
   .contact-footer .mask4, .contact-footer .mask3, .contact-footer .mask2, .contact-footer .mask1, .top-menu .top-info .mask, .top-menu ul img, .burger-button label img, .header-button img {
-    width: 15px;
+    width: 10px;
   }
 }
 @media screen and (min-width: 1440px) {
   .contact-footer .mask4, .contact-footer .mask3, .contact-footer .mask2, .contact-footer .mask1, .top-menu .top-info .mask, .top-menu ul img, .burger-button label img, .header-button img {
-    width: 17px;
+    width: 11px;
   }
 }
 
@@ -151,37 +151,37 @@ header .title {
 }
 @media screen and (min-width: 500px) {
   .burger-button label, .header-button {
-    padding: 5px;
+    padding: 4px;
     border-radius: 3px;
   }
 }
 @media screen and (min-width: 768px) {
   .burger-button label, .header-button {
-    padding: 7px;
+    padding: 5px;
     border-radius: 4px;
   }
 }
 @media screen and (min-width: 900px) {
   .burger-button label, .header-button {
-    padding: 9px;
+    padding: 6px;
     border-radius: 5px;
   }
 }
 @media screen and (min-width: 1024px) {
   .burger-button label, .header-button {
-    padding: 11px;
+    padding: 7px;
     border-radius: 6px;
   }
 }
 @media screen and (min-width: 1280px) {
   .burger-button label, .header-button {
-    padding: 13px;
+    padding: 8px;
     border-radius: 7px;
   }
 }
 @media screen and (min-width: 1440px) {
   .burger-button label, .header-button {
-    padding: 15px;
+    padding: 9px;
     border-radius: 8px;
   }
 }
@@ -390,6 +390,40 @@ header .title img {
   }
   .empty-button img {
     width: 15px;
+  }
+}
+
+.menu .banner .box h3 {
+  font-size: 6px;
+}
+@media screen and (min-width: 500px) {
+  .menu .banner .box h3 {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .banner .box h3 {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .menu .banner .box h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu .banner .box h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .menu .banner .box h3 {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu .banner .box h3 {
+    font-size: 24px;
   }
 }
 
@@ -943,6 +977,7 @@ header {
   background-repeat: no-repeat;
   width: 100%;
   padding-bottom: 10%;
+  padding-top: 1%;
   margin-right: 0;
 }
 header .title {
@@ -990,8 +1025,8 @@ header .header-button {
 .top-menu .top-info .mask {
   aspect-ratio: 1/1;
   background-color: rgb(186, 153, 91);
-  -webkit-mask-image: url(../assets/images/Other/telephone.png);
-  mask-image: url(../assets/images/Other/telephone.png);
+  -webkit-mask-image: url("../assets/images/Other/telephone.png");
+  mask-image: url("../assets/images/Other/telephone.png");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: cover;
@@ -1000,15 +1035,20 @@ header .header-button {
 }
 
 .menu {
-  background: rgba(223, 199, 154, 0.196);
-  margin: 0;
-}
-.menu h1 {
   padding-top: 5%;
-  text-align: center;
-  font-family: "Cormorant Garamond";
-  font-weight: 600;
   margin: 0;
+  position: relative;
+}
+.menu .background {
+  background-image: linear-gradient(to right bottom, rgba(223, 199, 154, 0.196) 25%, rgba(223, 199, 154, 0.196)), url(../assets/images/banner/imgbgcategory.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 .menu .banner {
   display: flex;
@@ -1026,9 +1066,8 @@ header .header-button {
 }
 .menu .banner .box h3 {
   text-align: center;
-  font-size: 15px;
   font-family: "Cormorant Garamond";
-  font-weight: 600;
+  font-weight: 500;
 }
 .menu .banner .box img {
   display: block;
@@ -1043,6 +1082,12 @@ header .header-button {
 .menu .banner .box:hover {
   background: #DEB887;
   color: white;
+}
+.menu .banner .box:hover img {
+  filter: brightness(0) invert(1);
+}
+.menu .banner .box:hover .im img {
+  filter: invert(1);
 }
 
 .menu-burger {
@@ -1158,15 +1203,27 @@ header .header-button {
 }
 
 .our-menu {
-  background-color: rgba(223, 199, 154, 0.196);
   margin-top: 5%;
   padding-bottom: 5%;
+  padding-top: 5%;
   position: relative;
+}
+.our-menu .background {
+  background-color: rgba(223, 199, 154, 0.196);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 .our-menu .menu-img1 {
   position: absolute;
   z-index: -1;
   right: 0;
+  top: 0;
   max-height: 100%;
   width: auto;
 }
@@ -1294,6 +1351,8 @@ header .header-button {
 }
 .team .background {
   background-image: url(../assets/images/our-chefs/imgbg-ourchefs.jpg);
+  background-position: center;
+  background-size: cover;
   position: absolute;
   z-index: -1;
   top: 0px;
@@ -1317,6 +1376,7 @@ header .header-button {
 footer {
   background-image: url(../assets/images/footer/img-ng-footer.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   color: white;
@@ -1324,7 +1384,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   font-family: Open Sans;
   position: relative;
 }
@@ -1444,7 +1504,7 @@ footer {
 .container-footer {
   display: grid;
   grid-template-columns: 20% 20% 40% 20%;
-  gap: 5px;
+  gap: 1px;
   width: 90%;
   margin-top: 5%;
   margin-bottom: 5%;

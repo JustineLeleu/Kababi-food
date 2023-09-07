@@ -43,7 +43,7 @@ $breakpoints:
     {
         @include media-min($_key)
         {
-            $size: $size+ 2px;
+            $size: $size+ 1px;
             font-size: $size;
         }
     }
@@ -58,7 +58,7 @@ $breakpoints:
     {
         @include media-min($_key)
         {
-            $size: $size + 2px;
+            $size: $size + 1px;
             width: $size;
         }
     }
@@ -90,7 +90,7 @@ $breakpoints:
     {
         @include media-min($_key)
         {
-            $padding: $padding + 2px;
+            $padding: $padding + 1px;
             $radius: $radius + 1px;
             padding: $padding;
             border-radius: $radius;
@@ -201,6 +201,21 @@ $breakpoints:
             {
                 width: $size2;
             }
+        }
+    }
+}
+
+%menu-text-size
+{
+    $size: 6px;
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size+ 3px;
+            font-size: $size;
         }
     }
 }
