@@ -1,17 +1,19 @@
 
 .menu{
-    background: $backgroundorange;
+      background: $backgroundorange;
    
+
       margin: 0;
       h1{
         padding-top: 5%;
-        margin: 0;
         text-align: center;
         font-family: 'Cormorant Garamond';
         font-weight: 600;
         
+        margin: 0;
+    }
 
-      }
+    
       
     .banner{
         display: flex;
@@ -57,7 +59,4 @@
      
  }
 
-    
-    
-    
-    
+

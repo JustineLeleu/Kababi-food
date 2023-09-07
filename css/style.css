@@ -808,7 +808,10 @@ header .header-button {
   transform: rotate(-90deg);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> okly
 .menu-burger {
   float: right;
   background: rgb(82, 82, 82);
@@ -1047,6 +1050,7 @@ header .header-button {
   align-self: flex-start;
   font-family: Open Sans;
   font-weight: 100;
+<<<<<<< HEAD
 }
 
 .team {
@@ -1076,4 +1080,6 @@ header .header-button {
 }
 .team .team-content img {
   width: 15%;
+=======
+>>>>>>> okly
 }/*# sourceMappingURL=style.css.map */
