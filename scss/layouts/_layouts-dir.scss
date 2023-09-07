@@ -6,8 +6,9 @@ Files inside this folder can contain specific element styles and layout.
 //Import Layout files
 @import "header";
 @import "main-navigation";
-@import "menu";
+@import "menu-burger";
 
+@import "menu";
 @import "section-blog";
 
 
@@ -18,6 +19,10 @@ Files inside this folder can contain specific element styles and layout.
 @import "section-gallery";
 @import "gallery-content";
 @import "section-team";
+
+@import "blog-brand-icons";
+@import "blog-cards";
+@import "blog-main-container";
 
 @import "footer";
 @import "footer-contact-container";

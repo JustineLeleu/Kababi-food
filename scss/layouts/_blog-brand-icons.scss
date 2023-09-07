@@ -1,0 +1,33 @@
+// Blog section brand icons
+.brand-icons
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 5%;
+
+    .mask1
+    {
+        @include mask-brand("../assets/images/brand/imgbrand3.png");
+    }
+    .mask2
+    {
+        @include mask-brand("../assets/images/brand/imgbrand4.png");
+    }
+    .mask3
+    {
+        @include mask-brand("../assets/images/brand/imgbrand5.png");
+    }
+    .mask4
+    {
+        @include mask-brand("../assets/images/brand/imgbrand6.png");
+    }
+    .mask5
+    {
+        @include mask-brand("../assets/images/brand/imgbrand1.png");
+    }
+    .mask6
+    {
+        @include mask-brand("../assets/images/brand/imgbrand2.png");
+    }
+}

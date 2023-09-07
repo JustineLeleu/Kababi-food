@@ -8,21 +8,21 @@
     .mask1
     {
         margin-top: 40%;
-        @include mask("../assets/images/Other/location.png", 0);
+        @include mask-icons("../assets/images/Other/location.png", 0);
     }
     .mask2
     {
         margin-top: 40%;
-        @include mask("../assets/images/Other/envelope.png", 0);
+        @include mask-icons("../assets/images/Other/envelope.png", 0);
     }
     .mask3
     {
         margin-top: 40%;
-        @include mask("../assets/images/Other/telephone.png", -90deg);
+        @include mask-icons("../assets/images/Other/telephone.png", -90deg);
     }
     .mask4
     {
         margin-top: 40%;
-        @include mask("../assets/images/Other/time.png", 0);
+        @include mask-icons("../assets/images/Other/time.png", 0);
     }
 }

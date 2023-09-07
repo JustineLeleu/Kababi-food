@@ -38,7 +38,7 @@
 
         .mask
         {
-            @include mask("../assets/images/Other/telephone.png", -90deg);
+            @include mask-icons("../assets/images/Other/telephone.png", -90deg);
         }
     }
 }

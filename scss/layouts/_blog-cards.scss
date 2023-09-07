@@ -1,0 +1,32 @@
+// Blog section cards
+.card-contain
+{
+    margin: 5%;
+    @extend %blog-text-size;
+
+    .para1
+    {
+        display: flex;
+        font-family: Open Sans;
+        margin-bottom: 10px;
+
+        .icon
+        {
+            width: 5%;
+        }
+    }
+
+    p
+    {
+        font-family: 'Cormorant Garamond';
+        margin: 0;
+    }
+
+    .empty-button
+    {
+        width: fit-content;
+        height: fit-content;
+        margin-top: 10px;
+        border-color: rgba(255, 255, 255, 0);
+    }
+}

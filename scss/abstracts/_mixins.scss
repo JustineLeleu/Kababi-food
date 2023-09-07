@@ -17,6 +17,7 @@ $breakpoints:
     }
 }
 
+// header responsive
 %header-title-font-size
 {
     $size: 30px;
@@ -118,10 +119,11 @@ $breakpoints:
     }
 }
 
+// sections title responsive
 %section-title
 {
     $size1: 50px;
-    $size2: 10px;
+    $size2: 12px;
     $size3: 5px;
     $size4: 40px;
 
@@ -147,7 +149,7 @@ $breakpoints:
         @include media-min($_key)
         {
             $size1: $size1 + 20px;
-            $size2: $size2 + 3px;
+            $size2: $size2 + 5px;
             $size3: $size3 + 2px;
             $size4: $size4 + 10px;
 
@@ -171,6 +173,7 @@ $breakpoints:
     }
 }
 
+// buttons responsive
 %empty-button-size
 {
     $size1: 3px;
@@ -206,6 +209,7 @@ $breakpoints:
     }
 }
 
+// menu responsive
 %menu-text-size
 {
     $size: 6px;
@@ -221,6 +225,7 @@ $breakpoints:
     }
 }
 
+// about us responsive
 %about-us-img
 {
     $border: 10px;
@@ -272,6 +277,7 @@ $breakpoints:
     }
 }
 
+// our menu responsive
 %our-menu-content
 {
     $size1: 8px;
@@ -338,6 +344,7 @@ $breakpoints:
     }
 }
 
+// gallery responsive
 %gallery-link-card
 {
     $size1: 5px;
@@ -381,6 +388,58 @@ $breakpoints:
     }
 }
 
+// blog responsive
+%blog-brand-size
+{
+    $size: 20px;
+
+    width: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 10px;
+
+            width: $size;
+        }
+    }
+}
+
+%blog-text-size
+{
+    $size1: 5px;
+    $size2: 8px;
+
+    .para1
+    {
+        font-size: $size1;
+    }
+    p
+    {
+        font-size: $size2;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size1: $size1 + 1.5px;
+            $size2: $size2 + 3px;
+
+            .para1
+            {
+                font-size: $size1;
+            }
+            p
+            {
+                font-size: $size2;
+            }
+        }
+    }
+}
+
+// footer responsive
 %footer-titles-size
 {
     $size: 12px;
@@ -502,7 +561,7 @@ $breakpoints:
 }
 
 // Mask mixin
-@mixin mask($img, $rotation)
+@mixin mask-icons($img, $rotation)
 {
     @extend %header-img-size;
     aspect-ratio: 1/1;
@@ -513,4 +572,18 @@ $breakpoints:
     mask-repeat: no-repeat; 
     mask-size: cover;
     transform: rotate($rotation);
+}
+
+@mixin mask-brand($img)
+{
+    @extend %blog-brand-size;
+    //width: 50px;
+    aspect-ratio: 1/1;
+    background-color: rgb(141, 141, 141);
+    -webkit-mask-image: url($img);
+    mask-image: url($img);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    mask-size: contain;
+    mask-position: center;
 }
