@@ -20,10 +20,7 @@ $breakpoints:
 %header-title-font-size
 {
     $size: 30px;
-<<<<<<< HEAD
 
-=======
->>>>>>> okly
     font-size: $size;
 
     @each $_key, $_value in $breakpoints
@@ -31,10 +28,7 @@ $breakpoints:
         @include media-min($_key)
         {
             $size: $size + 10px;
-<<<<<<< HEAD
-            
-=======
->>>>>>> okly
+    
             font-size: $size;
         }
     }
