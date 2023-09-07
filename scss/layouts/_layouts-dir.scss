@@ -7,9 +7,10 @@ Files inside this folder can contain specific element styles and layout.
 @import "header";
 @import "main-navigation";
 @import "menu";
+
 @import "section-blog";
 
-@import "menu-burger";
+
 @import "section-title";
 @import "section-about-us";
 @import "section-our-menu";
@@ -17,4 +18,11 @@ Files inside this folder can contain specific element styles and layout.
 @import "section-gallery";
 @import "gallery-content";
 @import "section-team";
+
+@import "footer";
+@import "footer-contact-container";
+@import "footer-form";
+@import "footer-icons";
+@import "footer-main-container";
+@import "footer-navbar";
 

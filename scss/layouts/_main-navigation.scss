@@ -36,17 +36,9 @@
         gap: 2px;
         align-items: center;
 
-        .mask1
+        .mask
         {
-            @extend %header-img-size;
-            aspect-ratio: 1/1;
-            background-color: $orange;
-            -webkit-mask-image: url(../assets/images/Other/telephone.png);
-            mask-image: url(../assets/images/Other/telephone.png);
-            -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat; 
-            mask-size: cover;
-            transform: rotate(-90deg);
+            @include mask("../assets/images/Other/telephone.png", -90deg);
         }
     }
 }

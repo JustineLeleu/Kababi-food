@@ -1,16 +1,30 @@
 // Section Our Menu
 .our-menu
 {
-    background-color: $backgroundorange;
     margin-top: 5%;
     padding-bottom: 5%;
+    padding-top: 5%;
     position: relative;
+
+    .background
+    {
+        background-color: $backgroundorange;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
 
     .menu-img1
     {
         position: absolute;
         z-index: -1;
         right: 0;
+        top: 0;
         max-height: 100%;
         width: auto;
     }

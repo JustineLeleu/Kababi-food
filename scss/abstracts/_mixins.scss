@@ -21,6 +21,8 @@ $breakpoints:
 {
     $size: 30px;
 
+    
+
     font-size: $size;
 
     @each $_key, $_value in $breakpoints
@@ -28,7 +30,6 @@ $breakpoints:
         @include media-min($_key)
         {
             $size: $size + 10px;
-    
             font-size: $size;
         }
     }
@@ -43,7 +44,7 @@ $breakpoints:
     {
         @include media-min($_key)
         {
-            $size: $size+ 2px;
+            $size: $size+ 1px;
             font-size: $size;
         }
     }
@@ -58,7 +59,7 @@ $breakpoints:
     {
         @include media-min($_key)
         {
-            $size: $size + 2px;
+            $size: $size + 1px;
             width: $size;
         }
     }
@@ -90,7 +91,7 @@ $breakpoints:
     {
         @include media-min($_key)
         {
-            $padding: $padding + 2px;
+            $padding: $padding + 1px;
             $radius: $radius + 1px;
             padding: $padding;
             border-radius: $radius;
@@ -201,6 +202,21 @@ $breakpoints:
             {
                 width: $size2;
             }
+        }
+    }
+}
+
+%menu-text-size
+{
+    $size: 6px;
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size+ 3px;
+            font-size: $size;
         }
     }
 }
@@ -363,4 +379,138 @@ $breakpoints:
             }
         }
     }
+}
+
+%footer-titles-size
+{
+    $size: 12px;
+
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 2px;
+
+            font-size: $size;
+        }
+    }
+}
+
+%footer-text-size
+{
+    $size: 6px;
+
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 1px;
+
+            font-size: $size;
+        }
+    }
+}
+
+%footer-mail-size
+{
+    $size: 8px;
+    $offset: 1px;
+
+    .mail
+    {
+        padding: $offset;
+    }
+    img
+    {
+        width: $size;
+    }
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 1px;
+            $offset: $offset + 1px;
+
+            .mail
+            {
+                padding: $offset;
+            }
+            img
+            {
+                width: $size;
+            }
+        }
+    }
+}
+
+%footer-contact-size
+{
+    $size: 12px;
+    $offset: 1px;
+
+    font-size: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 2px;
+            $offset: $offset + 1px;
+
+            font-size: $size;
+        }
+    }
+}
+
+%footer-img-top-size
+{
+    $size: 100px;
+
+    width: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 10px;
+
+            width: $size;
+        }
+    }
+}
+
+%footer-img-bottom-size
+{
+    $size: 20px;
+
+    width: $size;
+
+    @each $_key, $_value in $breakpoints
+    {
+        @include media-min($_key)
+        {
+            $size: $size + 10px;
+
+            width: $size;
+        }
+    }
+}
+
+// Mask mixin
+@mixin mask($img, $rotation)
+{
+    @extend %header-img-size;
+    aspect-ratio: 1/1;
+    background-color: $orange;
+    -webkit-mask-image: url($img);
+    mask-image: url($img);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    mask-size: cover;
+    transform: rotate($rotation);
 }

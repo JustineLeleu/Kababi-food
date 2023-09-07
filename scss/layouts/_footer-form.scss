@@ -1,0 +1,25 @@
+// Footer email form
+.form-footer
+{
+    display: flex;
+    margin-top: 5%;
+    @extend %footer-mail-size;
+
+    .mail
+    {
+        @extend %footer-text-size;
+    }
+
+    button
+    {
+        background-color: $orange;
+        border: none;
+        aspect-ratio: 1/1;
+        height: 100%;
+
+        img
+        {
+            filter: invert(1);
+        }
+    }
+}
