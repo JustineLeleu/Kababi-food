@@ -1,0 +1,21 @@
+// Footer icons
+.icons-footer
+{
+    display: flex;
+    gap: 5px;
+
+    @for $i from 1 through 4 
+    {
+        :nth-child(#{$i}) 
+        {
+            color: rgb(223, 223, 223);
+            text-decoration: none;
+            background-color: rgb(59, 59, 59);
+            padding: 5px;
+            border-radius: 25px;
+            width: 16px;
+            aspect-ratio: 1/1;
+            text-align: center;
+        }
+    }
+}

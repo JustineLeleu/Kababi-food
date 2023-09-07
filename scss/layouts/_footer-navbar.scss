@@ -1,0 +1,28 @@
+// Footer navbar
+.nav-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-top: solid $lightorange 0.1px;
+    position: relative;
+    padding-top: 2%;
+
+    p
+    {
+        @extend %footer-text-size;
+
+        span
+        {
+            color: $orange;
+        }
+    }
+    img
+    {
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        @extend %footer-img-bottom-size;
+    }
+}
