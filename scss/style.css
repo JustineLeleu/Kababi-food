@@ -808,6 +808,51 @@ header .header-button {
   transform: rotate(-90deg);
 }
 
+.menu {
+  background: rgba(223, 199, 154, 0.196);
+  margin: 0;
+}
+.menu h1 {
+  padding-top: 5%;
+  margin: 0;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+}
+.menu .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  margin: 0;
+}
+.menu .banner .box {
+  padding-top: 1%;
+  margin: 10px;
+  background: white;
+  padding-bottom: 2%;
+}
+.menu .banner .box h3 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+}
+.menu .banner .box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.menu .banner .box .im img {
+  text-align: center;
+  width: 10%;
+}
+.menu .banner .box:hover {
+  background: #DEB887;
+  color: white;
+}
 
 .menu-burger {
   float: right;
