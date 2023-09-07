@@ -1,0 +1,35 @@
+// Footer container
+.container-footer
+{
+    display: grid;
+    grid-template-columns: 20% 20% 40% 20%;
+    gap: 5px;
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    .item-footer
+    {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        
+        h2
+        {
+            font-family: 'Cormorant Garamond';
+            font-weight: 500;
+            @extend %footer-titles-size;
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+            @extend %footer-text-size;
+        }
+        p
+        {
+            margin: 0;
+            @extend %footer-text-size;
+        }
+    }
+}
