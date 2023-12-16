@@ -8,6 +8,12 @@ Your team has a total of 3-4 days, with the power of flexbox, grid and positioni
 ## Screenshots
 ![](assets/resources-readme/restaurant-theme-banner.jpg)
 
+## Badges
+
+[![MIT License](https://img.shields.io/badge/HTML-red.svg)](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/CSS-purple.svg)](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/SASS-pink.svg)](https://choosealicense.com/licenses/mit/)
+
 ## work progress
 
 This project was made in September 2023 during a formation at BeCode. 
